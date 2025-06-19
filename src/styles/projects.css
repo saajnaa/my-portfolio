@@ -1,0 +1,106 @@
+.project-section{
+
+
+ 
+padding: 10px;
+display: flex;
+flex-direction: column;
+top: 0;
+margin-top: 70px;
+justify-content: center;
+align-items: center;
+
+}
+
+
+.project-section h2{
+
+
+font-size: 3.1vw;
+font-weight: 700;
+text-align: center;
+margin-bottom: 50px;
+letter-spacing: 2px;
+color: rgb(5, 5, 109);
+border-bottom: .5px solid green;
+width: 30vw;
+ 
+
+}
+
+
+
+.project-container{
+
+
+display: flex;
+ flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+flex-grow: unset;
+gap: 20px;
+padding: 20px 10px;
+border-radius: 16px;
+ width: 90%;
+
+}
+ 
+
+.project{
+ background: rgba(147, 123, 253, 0.089);
+ box-shadow: 0 0 4px gray;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 25px  1px;
+border-radius: 8px;
+width: 300px;
+cursor: pointer;
+transition: 0.1s;
+ 
+
+}
+
+
+ 
+
+
+.project:hover{
+
+
+
+box-shadow: 0 0 12px gray;
+ 
+
+
+}
+
+
+
+.project img{
+
+
+height: 15vh;
+width: 15vh;
+
+
+
+}
+
+.project p{
+
+color: rgb(4, 4, 122);
+text-align: center;
+
+
+}
+
+.project p>span{
+
+
+color: rgb(158, 6, 37);
+font-weight: 600;
+
+}

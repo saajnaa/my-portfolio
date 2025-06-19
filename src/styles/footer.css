@@ -1,0 +1,93 @@
+footer {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    padding: 8px;
+    box-shadow: 0 0 5px gray;
+    background: rgb(10, 29, 48);
+    margin-top: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+
+
+}
+
+.Social-links {
+
+
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+    color: rgb(96, 230, 6);
+
+
+}
+
+.Social-links li {
+
+
+    text-align: left;
+    list-style: none;
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+
+
+}
+
+.Social-links li:hover {
+
+
+    color: green;
+    border-bottom: 1px solid green;
+
+}
+
+
+
+.developer {
+
+    margin-top: 2px;
+    text-align: center;
+    color: rgb(0, 119, 255);
+
+
+}
+
+.developer .link {
+
+
+    color: yellow;
+    border-bottom: 1px solid green;
+    user-select: none;
+    font-size: 16px;
+    font-weight: 400;
+
+
+}
+
+.developer .link:hover {
+
+
+    color: green;
+    border-bottom: 1px solid rgb(6, 230, 6);
+
+
+}
+
+
+
+.developer .link:active {
+
+
+    color: red;
+    border-bottom: 1px solid rgb(6, 230, 6);
+    user-select: none;
+
+}
