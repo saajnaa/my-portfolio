@@ -4,6 +4,8 @@ footer {
     flex-direction: column;
     flex-wrap: wrap-reverse;
     padding: 8px;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0 0 5px gray;
     background: rgb(10, 29, 48);
     margin-top: 30px;
@@ -26,7 +28,9 @@ footer {
     justify-content: center;
     column-gap: 15px;
     color: rgb(96, 230, 6);
-
+border-bottom: 1px solid gray;
+width: 180px;
+padding-bottom: 4px;
 
 }
 
@@ -35,7 +39,7 @@ footer {
 
     text-align: left;
     list-style: none;
-    border-bottom: 1px solid gray;
+    
     cursor: pointer;
 
 
@@ -59,35 +63,4 @@ footer {
 
 
 }
-
-.developer .link {
-
-
-    color: yellow;
-    border-bottom: 1px solid green;
-    user-select: none;
-    font-size: 16px;
-    font-weight: 400;
-
-
-}
-
-.developer .link:hover {
-
-
-    color: green;
-    border-bottom: 1px solid rgb(6, 230, 6);
-
-
-}
-
-
-
-.developer .link:active {
-
-
-    color: red;
-    border-bottom: 1px solid rgb(6, 230, 6);
-    user-select: none;
-
-}
+ 
