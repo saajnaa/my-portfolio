@@ -1,15 +1,84 @@
-# React + Vite
+# Sajan Rishidev Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a personal portfolio website for Sajan Rishidev, built with **React**, **Vite**, and **Tailwind CSS**. The site showcases projects, resume, blog, and contact information in a modern, responsive design.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Home Page:** Introduction and quick overview.
+- **Projects:** List of projects with tech stack and live links.
+- **Resume:** Section to display your resume.
+- **Blog:** Placeholder for blog posts.
+- **Contact:** Form for visitors to send queries.
+- **Footer:** Social media links and copyright.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Router DOM](https://reactrouter.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+
+ 
+
+<!-- ====================================== Getting Started =============================-->
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
 
 
+<!-- =============================== Installation=================================================== -->
+
+1. **Clone the repository:**
+ 
+   git clone https://github.com/your-username/sajan-portfolio.git
+   cd sajan-portfolio
+
+
+
+ 
+2. **Install dependencies:**
+ 
+   npm install
+   # or
+   yarn install
+  
+
+
+
+3. **Run the development server:**
+  
+   npm run dev
+   # or
+   yarn dev
+    
+
+
+4. **Build for production:**
+
+   npm run build
+
+
+
+5. **Preview the production build:**
+
+   npm run preview
+
+
+
+6. **Lint the code:**
+=> To Check The Code Quality And Formatting
+
+   npm run lint
+
+
+
+<!--=============================== Customization============================ -->
+   Add Projects: Edit src/components/Projects.jsx to add or update your projects.
+   Update Resume: Modify src/components/Resume.jsx.
+   Edit Blog: Update src/components/Blog.jsx.
+   Change Styles: Edit CSS files in src/styles/.
+   Assets: Place images in src/assets/.
