@@ -43,7 +43,7 @@ This is a personal portfolio website for Sajan Rishidev, built with **React**, *
 2. **Install dependencies:**
  
    npm install
-   # or
+    or
    yarn install
   
 
@@ -52,7 +52,7 @@ This is a personal portfolio website for Sajan Rishidev, built with **React**, *
 3. **Run the development server:**
   
    npm run dev
-   # or
+    or
    yarn dev
     
 
@@ -77,8 +77,13 @@ This is a personal portfolio website for Sajan Rishidev, built with **React**, *
 
 
 <!--=============================== Customization============================ -->
+
    Add Projects: Edit src/components/Projects.jsx to add or update your projects.
+   
    Update Resume: Modify src/components/Resume.jsx.
+   
    Edit Blog: Update src/components/Blog.jsx.
+   
    Change Styles: Edit CSS files in src/styles/.
+   
    Assets: Place images in src/assets/.
