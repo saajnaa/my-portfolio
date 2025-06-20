@@ -78,7 +78,7 @@ This is a personal portfolio website for Sajan Rishidev, built with **React**, *
 
 
 
-##Customization
+## Customization
 - **Add Projects: Edit src/components/Projects.jsx to add or update your projects.
  - ** Update Resume: Modify src/components/Resume.jsx.
 - ** Edit Blog: Update src/components/Blog.jsx.
