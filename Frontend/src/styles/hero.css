@@ -80,8 +80,8 @@ button {
     padding: 5px 10px;
     border-radius: 8px;
     width: 200px;
-    color: blue;
-    font-weight: 600;
+    color: white;
+    font-weight: 400;
     cursor: pointer;
     background: #050505;
 
@@ -121,9 +121,69 @@ button:hover {
     width: 23vw;
     border-radius: 100%;
     border: 3px solid rgb(200, 209, 203);
-    
 
 
+
+
+
+
+
+
+}
+
+
+/* ========================media query=========================== */
+
+
+
+@media screen and (max-width:412px) {
+
+
+    .hero-section {
+
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        align-content: center;
+        margin-top: 10px;
+ 
+
+
+    }
+
+    .hero-section .left {
+
+        width: 98%;
+        margin-left: 0;
+
+    }
+
+    .left h2 {
+
+        font-size: 6vw;
+        text-align: center;
+
+    }
+
+
+    .hero-section .right {
+
+        width: 98%;
+        padding: 20px 0 0 0;
+        margin-right: 0;
+
+
+    }
+
+    .right img {
+
+
+        width: 40vw;
+        height: 40vw;
+
+
+    }
 
 
 

@@ -8,10 +8,9 @@ footer {
     align-items: center;
     box-shadow: 0 0 5px gray;
     background: rgb(10, 29, 48);
-    margin-top: 30px;
-    position: absolute;
+    position: sticky;
     bottom: 0;
-    right: 0;
+    left: 0;
     width: 100%;
 
 
@@ -27,7 +26,7 @@ footer {
     align-items: center;
     justify-content: center;
     column-gap: 15px;
-    color: rgb(96, 230, 6);
+    color: rgb(245, 244, 247);
     border-bottom: 1px solid gray;
     width: 180px;
     padding-bottom: 4px;
@@ -59,6 +58,40 @@ footer {
     margin-top: 2px;
     text-align: center;
     color: rgb(0, 119, 255);
+
+
+}
+
+
+/* =====================  media query ========================== */
+
+
+@media only screen and (max-width:412px) {
+    
+
+.Social-links li{
+
+
+
+font-size: 23px;
+
+}
+
+
+.Social-links{
+
+
+margin: 5px 0;
+
+
+}
+
+.developer{
+
+
+margin-bottom: 5px;
+
+}
 
 
 }
