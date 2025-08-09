@@ -1,29 +1,32 @@
 import express from "express"
+import cors from "cors"
+
+const app = express();
+const PORT = 3000;
+
+
+// middleware section
+app.use(cors())
+app.use(express.json())
 
  
-const PORT = process.env.PORT || 3000;
 
- const app = express();
-
- app.get("/" , (req , res) => {
+// post request
+app.post('/contact', (req, res)=>{
 
 
-
-
-res.send("wah bhai tu ne kardiya")
-
-console.log(req)
+console.log(req.body)
 
 
 
 
-
- } )
-
- app.listen(PORT , ()=>{
-
-console.log("running server on port:" , PORT)
+})
 
 
-    
- } )
+
+app.listen(PORT, () => {
+
+  console.log("running server on port:", PORT)
+
+
+})

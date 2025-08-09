@@ -3,8 +3,9 @@
 
     display: flex;
     flex-direction: row;
-    padding: 12px;
+    padding: 12px 0;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     background: rgb(10, 29, 48);
     position: fixed;
@@ -13,20 +14,25 @@
     z-index: 222;
     box-shadow: 0 0 2px rgb(18, 10, 29);
 
+
+ }
+
+ .navbutton {
+    background: none;
+    border: none;
+    cursor: pointer;
+
  }
 
 
  .nav-logo {
 
 
-
-
+    width: 220px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
     gap: 8px;
-    margin-left: 25px;
 
  }
 
@@ -49,7 +55,6 @@
     font-size: 18px;
     color: rgb(197, 201, 8);
     cursor: pointer;
-
 
  }
 
@@ -109,16 +114,30 @@
 
 
 
-    color: whitesmoke;
+    color: rgb(9, 121, 33);
     justify-content: center;
     align-items: center;
-    font-size: 35px;
-    font-weight: 400;
+    font-size: 40px;
+    font-weight: 200;
     list-style: none;
     display: none;
-
+    background: none;
+    position: absolute;
+    right: 8px;
+    width: auto;
+    border: none;
 
  }
+
+ .mobile-nav-icon button {
+
+    font-weight: 200;
+
+ }
+
+
+
+
 
 
 
@@ -127,7 +146,7 @@
  /* =================== media query ============ */
 
 
- @media only screen and (max-width:412px) {
+ @media only screen and (max-width:700px) {
 
 
 
@@ -155,6 +174,13 @@
 
     }
 
+    .mobile-menu {
+
+       display: flex;
+
+    }
+
+
     ul .Activelink {
 
        padding: 5px 80px;
@@ -171,14 +197,5 @@
 
 
     }
-
-    .cancel {
-
-
-       display: none;
-
-
-    }
-
 
  }

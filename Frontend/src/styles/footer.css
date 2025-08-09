@@ -8,9 +8,6 @@ footer {
     align-items: center;
     box-shadow: 0 0 5px gray;
     background: rgb(10, 29, 48);
-    position: sticky;
-    bottom: 0;
-    left: 0;
     width: 100%;
 
 
@@ -39,15 +36,16 @@ footer {
     text-align: left;
     list-style: none;
     cursor: pointer;
-
+    margin: 3px;
+    font-size: 20px;
 
 }
 
 .Social-links li:hover {
 
 
-    color: green;
-    border-bottom: 1px solid green;
+    color: rgb(35, 66, 245);
+
 
 }
 
@@ -67,31 +65,42 @@ footer {
 
 
 @media only screen and (max-width:412px) {
-    
-
-.Social-links li{
 
 
 
-font-size: 23px;
-
-}
+    footer {
 
 
-.Social-links{
+
+        position: fixed;
+        bottom: 0;
 
 
-margin: 5px 0;
+    }
+
+    .Social-links li {
 
 
-}
 
-.developer{
+        font-size: 23px;
+
+    }
 
 
-margin-bottom: 5px;
+    .Social-links {
 
-}
+
+        margin: 5px 0;
+
+
+    }
+
+    .developer {
+
+
+        margin-bottom: 5px;
+
+    }
 
 
 }

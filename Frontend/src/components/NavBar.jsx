@@ -1,7 +1,10 @@
 import React from 'react'
 
-import { FaEquals } from 'react-icons/fa'
-import { FaCross } from 'react-icons/fa'
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+
+import { GiHamburgerMenu } from "react-icons/gi"
+
 
 import '../styles/navbar.css'
 
@@ -12,15 +15,20 @@ import { Link, NavLink } from 'react-router-dom'
 function Navbar() {
 
 
+    const [showlink, Setshowlink] = useState(false);
+
+
     const handleclick = () => {
 
 
+        Setshowlink(!showlink);
 
-
+ 
 
     }
 
 
+    const navigate = useNavigate();
 
 
     return (
@@ -32,45 +40,43 @@ function Navbar() {
 
             {/* navbar */}
 
-<div className="nav-sec">
+            <div className="nav-sec">
 
-            <div className='nav-container  '>
+                <div className='nav-container  '>
 
+                     <button onClick={()=> navigate("/home")} className='navbutton'>
+                        <div className="nav-logo">
 
-                <div className="nav-logo">
+                            <img src={logo} alt="sajan logo" />
+                            <h2>Sajan Rishidev</h2>
 
-                    <img src={logo} alt="sajan logo" />
-                    <h2>Sajan Rishidev</h2>
+                        </div>
 
-                </div>
-
-
-
-
-                <ul>
-                    <NavLink className={({ isActive }) => isActive ? " Activelink " : " link "} to="/home"> Home </NavLink>
-                    <NavLink className={({ isActive }) => isActive ? " Activelink " : " link "} to="/projects"> Projects </NavLink>
-                    <NavLink className={({ isActive }) => isActive ? " Activelink " : " link "} to="/resume"> Resume </NavLink>
-                    <NavLink className={({ isActive }) => isActive ? " Activelink " : " link "} to="/blog"> Blog </NavLink>
-                    <NavLink className={({ isActive }) => isActive ? " Activelink " : " link "} to="/contact"> Contact </NavLink>
-
-                </ul>
-
-                <div className="mobile-nav-icon">
+                    </button>
 
 
-                    <li className='equal' onClick={handleclick}><FaEquals></FaEquals></li>
-                    <li className='cancel'><FaCross></FaCross></li>
+                    <ul className={showlink ? "mobile-menu" : "web-menu"}>
+                        <NavLink onClick={()=>Setshowlink(false)}  className={({ isActive }) => isActive ? " Activelink " : " link "} to="/home"> Home </NavLink>
+                        <NavLink  onClick={()=>Setshowlink(false)}  className={({ isActive }) => isActive ? " Activelink " : " link "} to="/projects"> Projects </NavLink>
+                        <NavLink  onClick={()=>Setshowlink(false)}  className={({ isActive }) => isActive ? " Activelink " : " link "} to="/resume"> Resume </NavLink>
+                        <NavLink  onClick={()=>Setshowlink(false)}  className={({ isActive }) => isActive ? " Activelink " : " link "} to="/blog"> Blog </NavLink>
+                        <NavLink  onClick={()=>Setshowlink(false)}  className={({ isActive }) => isActive ? " Activelink " : " link "} to="/contact"> Contact </NavLink>
+
+                    </ul>
+
+                    <button onClick={handleclick} className="mobile-nav-icon">
+
+                        <GiHamburgerMenu />
+
+                    </button>
+
+
 
                 </div>
 
 
 
             </div>
-
-
-
-</div>
 
 
 

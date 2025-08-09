@@ -2,84 +2,85 @@ import React, { useState } from 'react'
 
 import '../styles/projects.css'
 
+import { FaReact } from 'react-icons/fa'
+import { FaNodeJs } from 'react-icons/fa'
+
+
 import gpcLogo from "../assets/project-img/gpc_logo.png"
 
 
-
-function Projects() {
-
-    const Projects = [
+    const Projectsdata = [
 
         {
 
             "id": 1,
             "name": "Golden Park College",
-            "image": "gpc.jpg",
-            "livingLink": "/project-alpha/1.html",
-            "technologies": ["React", "TypeScript"]
+            "image": gpcLogo,
+            "livingLink": "github.com/saajnaa/gpc",
+            "technologies": <FaReact/> 
         },
         {
             "id": 2,
             "name": "Alpha Beta Boarding School",
             "image": "gpc.jpg",
-            "livingLink": "/project-beta/2.html",
-            "technologies": ["Next.js", "Firebase"]
+            "livingLink": "github.com/saajnaa/gpcl",
+            "technologies":  <FaReact/> 
         },
         {
             "id": 3,
             "name": "Shree Nepal Rastriya Secondary School",
             "image": "gpc.jpg",
-            "livingLink": "/project-gamma/3.html",
-            "technologies": ["Express.js", "Tailwind CSS"]
+            "livingLink": "github.com/saajnaa/gpc",
+            "technologies":<FaReact/> 
         },
         {
             "id": 4,
             "name": "Edenburg college",
             "image": "gpc.jpg",
-            "livingLink": "/project-delta/4.html",
-            "technologies": ["Node.js", "Redux"]
+            "livingLink": "github.com/saajnaa/gpc",
+            "technologies": <FaReact/> 
         },
         {
             "id": 5,
             "name": "Barju Yuwa Club",
             "image": "gpc.jpg",
-            "livingLink": "/project-epsilon/5.html",
-            "technologies": ["AWS", "Kubernetes"]
+            "livingLink": "github.com/saajnaa/gpc",
+            "technologies":<FaReact/> 
         },
         {
             "id": 6,
             "name": "Project Zeta",
             "image": "gpc.jpg",
-            "livingLink": "/project-zeta/6.html",
-            "technologies": ["SvelteKit", "TypeScript"]
+            "livingLink": "github.com/saajnaa/gpc",
+            "technologies":<FaReact/> 
         },
         {
             "id": 7,
             "name": "Project Omega",
             "image": "gpc.jpg",
-            "livingLink": "/project-omega/7.html",
-            "technologies": ["Python", "Jupyter Notebook"]
+            "livingLink": "github.com/saajnaa/gpc",
+            "technologies": <FaReact/> 
         },
         {
             "id": 8,
             "name": "Project Theta",
             "image": "gpc.jpg",
-            "livingLink": "/project-theta/8.html",
-            "technologies": ["Node.js", "Express.js"]
+            "livingLink": "github.com/saajnaa/gpc",
+            "technologies": <FaReact/> 
         },
         {
             "id": 9,
             "name": "Project Phi",
             "image": "gpc.jpg",
-            "livingLink": "/project-phi/9.html",
-            "technologies": ["Go", "J2CL"]
+            "livingLink": "github.com/saajnaa/gpc",
+            "technologies":<FaReact/> 
         },
         {
             "id": 10,
             "name": "Project Chi",
             "image": "gpc.jpg",
-            "livingLink": "/project-chi/10.html",
-            "technologies": ["React Native", "Redux"]
+            "livingLink": "github.com/saajnaa/gpc",
+            "technologies": <FaReact/> 
         }
 
 
@@ -88,6 +89,9 @@ function Projects() {
 
 
     ]
+
+
+function Projects() {
 
 
     return (
@@ -99,22 +103,22 @@ function Projects() {
             <div className="project-section">
 
 
-                <h2>Projects...!!</h2>
+                <h2>Projects</h2>
                 <div className="project-container">
 
                     {
 
 
 
-                        Projects.map(({ id, name, livingLink, technologies }) => {
+                        Projectsdata.map(({ id, name, image, livingLink, technologies }) => {
 
 
                             return (<div className='project' key={id}>
 
-                                <img src={gpcLogo} alt="logo" />
-                                <p><span>Project Name:</span>{name}</p>
-                                <p><span> Live Link:</span>{livingLink}</p>
-                                <p> <span>Tech Stack: </span>{technologies.join(" ")}</p>
+                                <div> </div>
+                                <p> {name}</p>
+                                <p>{livingLink}</p>
+                                <p>  {technologies}</p>
 
                             </div>
 

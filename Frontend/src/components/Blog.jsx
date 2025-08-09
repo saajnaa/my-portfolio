@@ -1,9 +1,11 @@
 import React from 'react'
 
+import '../styles/blog.css'
+
 function Blog() {
   return (
     
-    <div>Blog</div>
+    <div className='div'>Blog Comming Soonn........</div>
   )
 }
 

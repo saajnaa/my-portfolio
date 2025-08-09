@@ -12,6 +12,12 @@ import { BsTwitterX } from 'react-icons/bs';
 import "../styles/footer.css"
 
 const Footer = () => {
+
+
+
+
+
+
   return (
 
     <>

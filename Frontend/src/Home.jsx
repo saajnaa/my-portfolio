@@ -2,6 +2,7 @@ import React from 'react'
 
 import Hero from './components/Hero'
 import Projects from './components/Projects'
+import Techstack from './components/Techstack'
 
 
 function Home() {
@@ -15,8 +16,9 @@ function Home() {
 
       <Hero></Hero>
 
-
-      <Projects></Projects>
+<Techstack></Techstack>
+ 
+ 
 
 
 
