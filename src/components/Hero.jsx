@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { use } from 'react'
 
 import '../styles/hero.css'
 
 import ReactTypingEffect from 'react-typing-effect';
 
 import heroimg from '../assets/hero-img.jpg'
+import { useNavigate } from 'react-router-dom';
+
+
 
 function Hero() {
+
+const Navigate = useNavigate();
+
     return (
 
 
@@ -24,8 +30,8 @@ function Hero() {
 
                     <div className="button">
 
-                        <button>Projects</button>
-                        <button>Resume</button>
+                        <button onClick={()=>{ Navigate("/projects")}}>Projects</button>
+                        <button onClick={()=>{Navigate("/resume")}}>Resume</button>
 
 
                     </div>
