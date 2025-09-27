@@ -42,26 +42,33 @@
     width: 90%;
     gap: 8px;
     column-gap: 7px;
-    border: 1px solid red;
 
 
 }
 
 
 .project {
-    background: rgb(43, 91, 146);
+    background: rgb(3, 7, 12);
     box-shadow: 0 0 4px gray;
     display: flex;
-    padding: 50px 0;
+    gap: 4px;
+    padding: 25px 0;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border-radius: 8px;
-    width: 300px;
     cursor: pointer;
     transition: 0.1s;
 
 
+}
+
+.project div>img {
+    width: 70px;
+    height: 70px;
+    box-shadow: 0 0 10px rgb(248, 248, 250);
+    border-radius: 50%;
+    margin-bottom: 4px;
 }
 
 
@@ -72,7 +79,7 @@
 
 
 
-background:rgb(35, 79, 129) ;
+    background: rgba(1, 1, 17, 0.911);
 
 
 
@@ -98,15 +105,32 @@ background:rgb(35, 79, 129) ;
 
 }
 
-.project p>span {
+.project p:nth-child(3) {
+    margin-top: -5px;
+    color: rgb(172, 45, 13);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
 
+.project p:nth-child(3):hover {
 
-    color: rgb(192, 4, 42);
-    font-weight: 600;
+    color: green;
+
 
 }
 
+.project p:nth-child(4) {
 
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    gap: 6px;
+    color: blue;
+
+}
 
 
 
@@ -117,21 +141,52 @@ background:rgb(35, 79, 129) ;
 
 @media only screen and (max-width:998px) {
 
+    .project-container {
+
+
+        grid-template-columns: 350px 350px;
+
+
+
+    }
+
+
+}
+
+@media only screen and (max-width:740px){
+
+
 .project-container{
 
+grid-template-columns: 240px 240px;
+margin-top: -30px;
+}
 
-grid-template-columns: 400px 400px;
+.project-section h2{
 
+font-size: 6vw;
+
+}
+
+.project-section{
+
+margin-bottom: 90px;
+
+}
 
 
 }
 
-    
+
+@media screen and (max-width:500px) {
+
+
+.project-container{
+
+grid-template-columns: 180px 180px;
+
+
 }
-
-
-
-@media screen and (max-width:412px) {
 
 
     .project-section {
@@ -154,23 +209,8 @@ grid-template-columns: 400px 400px;
         margin-bottom: 8px;
 
     }
-
-    .project-container {
-
-
-        width: 100%;
-
-
-    }
-
-
-    .project {
-
-        width: 270px;
-
-
-
-    }
+ 
+ 
 
 
 }

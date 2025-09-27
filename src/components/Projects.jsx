@@ -1,94 +1,77 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
+
+
+//=========== React Icons================================
+import { DiJsBadge } from "react-icons/di";
+import { DiCss3 } from "react-icons/di";
+import { AiFillHtml5 } from "react-icons/ai";
+import { FaReact } from 'react-icons/fa'
+import { FaNodeJs } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
+import { CgLink } from "react-icons/cg";
+
 
 import '../styles/projects.css'
 
-import { FaReact } from 'react-icons/fa'
-import { FaNodeJs } from 'react-icons/fa'
+
+//==================== photo============================
+import gpcLogo from "../assets/project-img/gpc-college.png"
+import bycLogo from "../assets/project-img/byc-club.png"
+import NepoaiLogo from "../assets/project-img/Nepoai.png"
+import EdenburghLogo from "../assets/project-img/Edenburgh.png"
+
+const Projectsdata = [
 
 
-import gpcLogo from "../assets/project-img/gpc_logo.png"
+    {
+        "id": 1,
+        "name": "Programming Quiz",
+        "image": bycLogo,
+        "livingLink": "https://programming-quiz-five.vercel.app",
+        "technologies": [<FaReact />]
+    },
+    {
+        "id": 2,
+        "name": "Nepo Ai",
+        "image": NepoaiLogo,
+        "livingLink": "https://nepoai.vercel.app ",
+        "technologies": [<FaReact />, < FaNodeJs />, <SiExpress />]
 
+    },
+    {
+        "id": 3,
+        "name": "Contact Application",
+        "image": bycLogo,
+        "livingLink": "github.com/saajnaa/gpcl",
+        "technologies": [<FaReact />, < FaNodeJs />, <SiExpress />, <SiMongodb />]
+    },
+    {
 
-    const Projectsdata = [
+        "id": 4,
+        "name": "Golden Park College",
+        "image": gpcLogo,
+        "livingLink": "github.com/saajnaa/gpc",
+        "technologies": [<FaReact />, <FaNodeJs />, <SiExpress />, <SiMongodb />]
 
-        {
+    },
+    {
+        "id": 5,
+        "name": "Barju Yuwa club",
+        "image": bycLogo,
+        "livingLink": "github.com/saajna",
+        "technologies": [<FaReact />, < FaNodeJs />, <SiExpress />, <SiMongodb />]
+    },
+    {
+        "id": 6,
+        "name": "Edenburg college",
+        "image": EdenburghLogo,
+        "livingLink": "https://golden-park-college.vercel.app",
+        "technologies": [<AiFillHtml5 />, <DiCss3 />, <DiJsBadge />]
+    },
 
-            "id": 1,
-            "name": "Golden Park College",
-            "image": gpcLogo,
-            "livingLink": "github.com/saajnaa/gpc",
-            "technologies": <FaReact/> 
-        },
-        {
-            "id": 2,
-            "name": "Alpha Beta Boarding School",
-            "image": "gpc.jpg",
-            "livingLink": "github.com/saajnaa/gpcl",
-            "technologies":  <FaReact/> 
-        },
-        {
-            "id": 3,
-            "name": "Shree Nepal Rastriya Secondary School",
-            "image": "gpc.jpg",
-            "livingLink": "github.com/saajnaa/gpc",
-            "technologies":<FaReact/> 
-        },
-        {
-            "id": 4,
-            "name": "Edenburg college",
-            "image": "gpc.jpg",
-            "livingLink": "github.com/saajnaa/gpc",
-            "technologies": <FaReact/> 
-        },
-        {
-            "id": 5,
-            "name": "Barju Yuwa Club",
-            "image": "gpc.jpg",
-            "livingLink": "github.com/saajnaa/gpc",
-            "technologies":<FaReact/> 
-        },
-        {
-            "id": 6,
-            "name": "Project Zeta",
-            "image": "gpc.jpg",
-            "livingLink": "github.com/saajnaa/gpc",
-            "technologies":<FaReact/> 
-        },
-        {
-            "id": 7,
-            "name": "Project Omega",
-            "image": "gpc.jpg",
-            "livingLink": "github.com/saajnaa/gpc",
-            "technologies": <FaReact/> 
-        },
-        {
-            "id": 8,
-            "name": "Project Theta",
-            "image": "gpc.jpg",
-            "livingLink": "github.com/saajnaa/gpc",
-            "technologies": <FaReact/> 
-        },
-        {
-            "id": 9,
-            "name": "Project Phi",
-            "image": "gpc.jpg",
-            "livingLink": "github.com/saajnaa/gpc",
-            "technologies":<FaReact/> 
-        },
-        {
-            "id": 10,
-            "name": "Project Chi",
-            "image": "gpc.jpg",
-            "livingLink": "github.com/saajnaa/gpc",
-            "technologies": <FaReact/> 
-        }
-
-
-
-
-
-
-    ]
+]
 
 
 function Projects() {
@@ -115,9 +98,9 @@ function Projects() {
 
                             return (<div className='project' key={id}>
 
-                                <div> </div>
+                                <div> <img src={image} alt="logo" /></div>
                                 <p> {name}</p>
-                                <p>{livingLink}</p>
+                                <p><Link to={livingLink} target='_blank'>preview Link </Link><CgLink /></p>
                                 <p>  {technologies}</p>
 
                             </div>
