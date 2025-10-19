@@ -53,7 +53,7 @@ const Projectsdata = [
         "id": 4,
         "name": "Golden Park College",
         "image": gpcLogo,
-        "livingLink": "github.com/saajnaa/gpc",
+        "livingLink": "https://golden-park-college.vercel.app",
         "technologies": [<FaReact />, <FaNodeJs />, <SiExpress />, <SiMongodb />]
 
     },
@@ -61,14 +61,14 @@ const Projectsdata = [
         "id": 5,
         "name": "Barju Yuwa club",
         "image": bycLogo,
-        "livingLink": "github.com/saajna",
+        "livingLink": "https://barju-yuwa-club.vercel.app",
         "technologies": [<FaReact />, < FaNodeJs />, <SiExpress />, <SiMongodb />]
     },
     {
         "id": 6,
         "name": "Edenburg college",
         "image": EdenburghLogo,
-        "livingLink": "https://golden-park-college.vercel.app",
+        "livingLink": "none",
         "technologies": [<AiFillHtml5 />, <DiCss3 />, <DiJsBadge />]
     },
 
