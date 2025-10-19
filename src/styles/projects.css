@@ -48,7 +48,7 @@
 
 
 .project {
-    background: rgb(3, 7, 12);
+    background: rgb(6, 41, 54);
     box-shadow: 0 0 4px gray;
     display: flex;
     gap: 4px;
@@ -79,7 +79,7 @@
 
 
 
-    background: rgba(1, 1, 17, 0.911);
+    background: rgb(4, 29, 39);
 
 
 
@@ -107,7 +107,7 @@
 
 .project p:nth-child(3) {
     margin-top: -5px;
-    color: rgb(172, 45, 13);
+    color: rgb(235, 49, 2);
     width: 100%;
     display: flex;
     justify-content: center;

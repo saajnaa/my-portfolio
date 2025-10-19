@@ -40,8 +40,7 @@ function Contact() {
 
   }
 
-  console.log(formData)
-  return (
+   return (
 
 
     <>

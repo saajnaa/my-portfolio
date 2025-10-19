@@ -3,7 +3,7 @@ import React from 'react'
 import Hero from './components/Hero'
 import Projects from './components/Projects'
 import Techstack from './components/Techstack'
-
+import Services from './components/Services'
 
 function Home() {
   return (
@@ -14,12 +14,10 @@ function Home() {
 
 
 
-      <Hero></Hero>
-
-<Techstack></Techstack>
- 
- 
-
+      <Hero/>
+      <Techstack/>
+      <Projects />
+      <Services />
 
 
 

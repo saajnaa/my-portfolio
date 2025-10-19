@@ -64,7 +64,7 @@
 
     display: flex;
     gap: 16px;
-    margin-right: 25px;
+    margin-right: 100px;
     justify-content: center;
     align-items: center;
     right: 0;
@@ -170,7 +170,7 @@
        width: 300px;
        top: 90px;
        border-radius: 8px;
-
+       right: -80px;
 
     }
 

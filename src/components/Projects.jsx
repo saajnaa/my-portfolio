@@ -21,6 +21,7 @@ import gpcLogo from "../assets/project-img/gpc-college.png"
 import bycLogo from "../assets/project-img/byc-club.png"
 import NepoaiLogo from "../assets/project-img/Nepoai.png"
 import EdenburghLogo from "../assets/project-img/Edenburgh.png"
+import ContactLogo from "../assets/project-img/contact-fevicon.png"
 
 const Projectsdata = [
 
@@ -43,7 +44,7 @@ const Projectsdata = [
     {
         "id": 3,
         "name": "Contact Application",
-        "image": bycLogo,
+        "image": ContactLogo,
         "livingLink": "github.com/saajnaa/gpcl",
         "technologies": [<FaReact />, < FaNodeJs />, <SiExpress />, <SiMongodb />]
     },

@@ -8,7 +8,7 @@ import Resume from './components/Resume'
 import Blog from './components/Blog'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-
+ 
 
 import './App.css'
 import { GrResume } from 'react-icons/gr'
