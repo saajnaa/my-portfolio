@@ -68,7 +68,7 @@ const Projectsdata = [
         "id": 6,
         "name": "Edenburg college",
         "image": EdenburghLogo,
-        "livingLink": "none",
+        "livingLink": "https://edenburgh-college.vercel.app",
         "technologies": [<AiFillHtml5 />, <DiCss3 />, <DiJsBadge />]
     },
 
