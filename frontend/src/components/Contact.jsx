@@ -2,26 +2,30 @@ import React, { useState, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import "../styles/contact.css"
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Contact() {
 
-  const [formData, setFormData] = useState('');
+
 
   const {
 
 
     register,
     handleSubmit,
-    formState: { errors, isSubmitting }
+    formState: { errors, isSubmitting },
+    reset,
 
 
   } = useForm();
 
   const onsubmit = async (data) => {
 
-    let postData = await fetch(
 
-      'https://localhost:3000/contact',
+    await fetch(
+
+      'http://localhost:9000',
       {
 
         method: 'post',
@@ -31,16 +35,35 @@ function Contact() {
 
 
 
-      }
+      })
+      .then(response => {
+        if (!response.ok) {
+
+          throw new Error(`HTTP error! Status: ${response.status}`);
+
+        }
+
+        return response.json(); // Parse JSON response
+
+      })
+      .then(result => {
+
+        toast.success('Message sent successfully!');
+        reset(); // Reset the form after successful submission
+
+      })
+      .catch(error => {
+
+        toast.error('Failed to send message');
+
+      });
 
 
 
-
-    )
 
   }
 
-   return (
+  return (
 
 
     <>
@@ -61,7 +84,7 @@ function Contact() {
 
 
           <label htmlFor="message">Message</label>
-          <input type="textfield" placeholder='write message'  {...register('message', { required: true, })} />
+          <textarea id='message' placeholder='write message'  {...register('message', { required: true, })} />
 
           <div className="submit">
             <input disabled={isSubmitting} id='submit' type="submit" value="submit" />
@@ -69,6 +92,7 @@ function Contact() {
 
         </form>
 
+        <ToastContainer position='top-right' autoClose={2000} />
       </div>
 
     </>

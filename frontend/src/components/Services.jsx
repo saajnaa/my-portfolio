@@ -1,4 +1,6 @@
 import React from 'react'
+
+import serviceImg from '../assets/Service.jpg'
 import '../styles/services.css'
 
 function Services() {
@@ -17,7 +19,7 @@ function Services() {
                     </ul>
 
                     <div className="service-img">
-                        <img src="" alt="service img" />
+                        <img src={serviceImg} alt="service img" />
 
                     </div>
                 </div>

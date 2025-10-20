@@ -11,7 +11,7 @@ width: 100%;
 .form-section h2{
 
 
-font-size: 2.5vw;
+font-size: 30px;
 color: green;
 font-weight: 500;
 
@@ -35,6 +35,14 @@ border-radius: 8px;
 
 }
 
+form span{
+
+
+display: absolute;
+background: green;
+
+}
+
 form label{
 
 
@@ -53,7 +61,7 @@ background:rgb(255, 254, 254);
 padding: 12px;
 border-radius: 16px;
  outline: none;
-width: 90%;
+width: 70%;
 
 
 }
@@ -62,12 +70,33 @@ width: 90%;
 
 
 
-height: 20vh;
-
-
-
+background:rgb(255, 254, 254);
+padding: 12px;
+border-radius: 16px;
+ outline: none;
+width: 70%;
+height: 150px;
+padding: 30px;
+vertical-align: top;
+overflow-y: auto;
+white-space: pre-wrap;
+word-wrap: break-word;
+box-sizing: border-box;
+resize: none;
 
 }
+
+#message::-webkit-scrollbar{
+
+width: 4px;
+
+}
+
+#message::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
 
 .submit{
 
