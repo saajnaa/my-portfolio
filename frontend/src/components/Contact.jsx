@@ -25,7 +25,7 @@ function Contact() {
 
     await fetch(
 
-      'http://localhost:9000',
+      'https://sajan-rishidev-bbackend.vercel.app',
       {
 
         method: 'post',
