@@ -9,7 +9,7 @@ function Services() {
             <div className="services">
                 <h2>Services</h2>
                 <div className="horizontal-align">
-                    <ul>
+                    <ul className='ul-service'>
                         <li>Static website Development</li>
                         <li>Dynamic Website Development</li>
                         <li>E-Commerce Website</li>

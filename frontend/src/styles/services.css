@@ -1,58 +1,84 @@
-.services{
+.services {
 
-display: flex;
-flex-direction: column;
-justify-content: center;
-padding: 20px 10px;
-margin-left: 50px;
-
-}
-.services h2{
-
-font-size: 28px;
-font-weight: 700;
-color: rgb(11, 11, 44);
-padding-left: 20px;
+     width: 100%;
+    position: relative;
 }
 
-.horizontal-align{
+.services h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(9, 9, 24);
+}
+
+.horizontal-align {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ul-service {
 
 
     display: flex;
-flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    width: 40%;
+    padding: 0 20px;
 
 }
 
-.horizontal-align ul{
+.ul-service>li {
 
-display: flex;
-flex-direction: column;
-gap: 0;
-font-size: 18px;
-color: rgb(4, 4, 22);
-align-items :start;
-padding: 10px 40px ;
-width: 50%;
-border-radius: 20px;
+    list-style: disc;
+    width: 100%;
+    font-size: 20px;
+    color: rgb(2, 61, 2);
 
 }
 
+.ul-service>li:hover {
 
-.horizontal-align ul>li{
+    color: rebeccapurple;
+    cursor: pointer;
 
-cursor: pointer;
-color: green;
 }
 
-.horizontal-align ul>li:hover{
+.service-img {
 
-    color: rgb(11, 44, 11);
+    width: 300px;
+    height: 300px;
+
 }
 
-.service-img{
+@media only screen and (max-width:850px) {
 
-width: 300px;
-height: 200px;
+
+    .services {
+
+
+        padding: 0 0 80px 0;
+        margin-bottom: 350px;
+    }
+
+    .horizontal-align {
+
+        flex-direction: column-reverse;
+        justify-items: center !important;
+        align-items: center !important;
+        
+    }
+
+    .ul-service {
+
+        width: 90%;
+        background: none;
+        margin-top: 200px;
+        padding: 30px;
+    }
 
 
 }
