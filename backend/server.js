@@ -6,11 +6,15 @@ import SendMail from './services/Nodemailer-Service.js';
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
+const PORT = process.env.PORT || 3000;
 
-app.post('/', SendMail);
+app.get('/', (req, res) => {
+  res.send('Email Service is running');
+});
+
+app.post('/contact', SendMail);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
