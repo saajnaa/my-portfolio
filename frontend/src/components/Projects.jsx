@@ -17,11 +17,12 @@ import '../styles/projects.css'
 
 
 //==================== photo============================
+import quizLogo from '../assets/project-img/programming-quiz.png'
 import gpcLogo from "../assets/project-img/gpc-college.png"
 import bycLogo from "../assets/project-img/byc-club.png"
 import NepoaiLogo from "../assets/project-img/Nepoai.png"
 import EdenburghLogo from "../assets/project-img/Edenburgh.png"
-import ContactLogo from "../assets/project-img/contact-fevicon.png"
+import ContactLogo from "../assets/project-img/contact.jpg"
 
 const Projectsdata = [
 
@@ -29,7 +30,7 @@ const Projectsdata = [
     {
         "id": 1,
         "name": "Programming Quiz",
-        "image": bycLogo,
+        "image": quizLogo,
         "livingLink": "https://programming-quiz-five.vercel.app",
         "technologies": [<FaReact />]
     },
