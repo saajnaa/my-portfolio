@@ -25,8 +25,8 @@ const Navigate = useNavigate();
                 <div className="left">
 
 
-                    <h2>Hello, Im Sajan Rishidev. A <br /> <span> <ReactTypingEffect text={ [ "React Developer " , "MERN Developer", "AI Integration", "LangChain Developer" ]} speed={170} eraseSpeed={60} eraseDelay={90} typingDelay={30} /> </span></h2>
-                    <p>With a strong foundation in JavaScript, I build scalable and intuitive digital experiences using MongoDB, Express, React, and Node.js.. Using MERN stack with a focus on AI integration, LangChain workflows, and fast, scalable interfaces.</p>
+                    <h2>Transforming Concepts Into Functional Platforms <br /> <span> <ReactTypingEffect text={ [ "React Developer " , "MERN Developer", "AI Integration", "FUll Stack Developer" ]} speed={170} eraseSpeed={60} eraseDelay={90} typingDelay={30} /> </span></h2>
+                    <p>With a strong foundation in JavaScript, I design and develop websites and applications using MongoDB, Express, React, and Node.js, with a focus on performance and simplicity</p>
 
                     <div className="button">
 
