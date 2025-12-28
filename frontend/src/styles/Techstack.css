@@ -1,71 +1,73 @@
+.technology-section {
 
 
-.technology-section{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    justify-content: center;
+    align-items: center;
 
+}
 
-display: flex;
-flex-direction: column;
-margin: 20px 0;
+.technology-section h1 {
+
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(2, 3, 12);
+    border-bottom: .5px solid rgb(32, 11, 66);
 
 
 }
 
-.technology-section h1{
 
-text-align: center;
-font-size: 30px;
-font-weight: 700;
-
-}
+.technology-container {
 
 
-.technology-container{
-
-
-width: 100%;
-display: grid;
-grid-template-columns: 200px 200px 200px;
- gap: 9px;
-justify-content: center;
-align-items: center;
- padding: 8px 0;
-
-
-}
- 
-.technology{
-
-border-radius: 10px;
- background: #cac8c883;
-list-style-type: none;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 4px;
-padding: 10px;
-cursor: pointer;
-
-}
-
-.technology:hover{
-background: #c9c6c63d;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    gap: 9px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
 
 
 }
 
-.technology .icon{
+.technology {
 
-
-font-size: 25px;
-color: rgb(5, 11, 70);
+    border-radius: 10px;
+    background: #cac8c883;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    padding: 10px;
+    cursor: pointer;
 
 }
 
-.technology p{
+.technology:hover {
+    background: #c9c6c63d;
 
-font-size: 16px;
-color: rgb(1, 1, 8);
+
+}
+
+.technology .icon {
+
+
+    font-size: 25px;
+    color: rgb(5, 11, 70);
+
+}
+
+.technology p {
+
+    font-size: 16px;
+    color: rgb(1, 1, 8);
 
 }
 
@@ -74,17 +76,17 @@ color: rgb(1, 1, 8);
 
 
 
-.technology-container{
-
- 
-grid-template-columns: 200px 200px ;
- margin: 10px;
+    .technology-container {
 
 
-}
- 
+        grid-template-columns: 200px 200px;
+        margin: 10px;
 
-    
+
+    }
+
+
+
 }
 
 
@@ -92,15 +94,15 @@ grid-template-columns: 200px 200px ;
 
 
 
-.technology-container{
-
- 
-grid-template-columns: 180px 180px;
- 
+    .technology-container {
 
 
-}
- 
+        grid-template-columns: 180px 180px;
 
-    
+
+
+    }
+
+
+
 }

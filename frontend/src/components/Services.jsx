@@ -7,14 +7,14 @@ function Services() {
     return (
         <>
             <div className="services">
-                <h2>Services</h2>
+                <h2>The Work I Can DO For You</h2>
                 <div className="horizontal-align">
                     <ul className='ul-service'>
                         <li>Static website Development</li>
                         <li>Dynamic Website Development</li>
                         <li>E-Commerce Website</li>
                         <li>Employ/School Management System</li>
-                        <li>Api integration</li>
+                        <li>Ai integration</li>
                         <li>Local Payment Integration</li>
                     </ul>
 

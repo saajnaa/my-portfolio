@@ -1,14 +1,19 @@
 .services {
 
-     width: 100%;
+    width: 100%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .services h2 {
     text-align: center;
     font-size: 30px;
     font-weight: 700;
-    color: rgb(9, 9, 24);
+    color: rgb(2, 3, 12);
+    border-bottom: .5px solid rgb(32, 11, 66);
 }
 
 .horizontal-align {
@@ -69,7 +74,7 @@
         flex-direction: column-reverse;
         justify-items: center !important;
         align-items: center !important;
-        
+
     }
 
     .ul-service {

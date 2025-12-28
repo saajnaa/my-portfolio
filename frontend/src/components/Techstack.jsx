@@ -1,3 +1,7 @@
+import { SiTailwindcss } from "react-icons/si"; 
+import { FaBootstrap } from "react-icons/fa"; 
+import { SiMui } from "react-icons/si"; 
+import { SiExpress } from "react-icons/si"; 
 import React from 'react'
 
 import "../styles/Techstack.css"
@@ -44,7 +48,7 @@ const TechnologyStack = [
         id: 4,
         technolgy: "TailwindCSS"
         ,
-        icon: <FaHtml5 />
+        icon: <SiTailwindcss />
 
     },
     {
@@ -59,23 +63,23 @@ const TechnologyStack = [
     {
 
         id: 6,
-        technolgy: "React Router"
+        technolgy: "MUI"
         ,
-        icon: <FaHtml5 />
+        icon: <SiMui />
 
     },
     {
 
         id: 7,
-        technolgy: "React Redux"
+        technolgy: "BootStrap"
         ,
-        icon: <FaHtml5 />
+        icon: <FaBootstrap />
 
     },
     {
 
         id: 8,
-        technolgy: "React Query"
+        technolgy: "Gsap"
         ,
         icon: <FaHtml5 />
 
@@ -102,7 +106,7 @@ const TechnologyStack = [
         id: 11,
         technolgy: "Express.js"
         ,
-        icon: <FaHtml5 />
+        icon: <SiExpress />
 
     },
 
@@ -140,7 +144,7 @@ const Techstack = () => {
 
             <div className="technology-section">
 
-                <h1>My Tech Stack......</h1>
+                <h1>Technical Skill's</h1>
                 <div className='technology-container'>
 
 
