@@ -17,12 +17,8 @@ import '../styles/projects.css'
 
 
 //==================== photo============================
-import quizLogo from '../assets/project-img/programming-quiz.png'
-import gpcLogo from "../assets/project-img/gpc-college.png"
-import bycLogo from "../assets/project-img/byc-club.png"
-import NepoaiLogo from "../assets/project-img/Nepoai.png"
-import EdenburghLogo from "../assets/project-img/Edenburgh.png"
-import ContactLogo from "../assets/project-img/contact.jpg"
+import sajnaLogo from '../assets/project-img/sajan-portfolio.png'
+
 
 const Projectsdata = [
 
@@ -30,14 +26,14 @@ const Projectsdata = [
     {
         "id": 1,
         "name": "Programming Quiz",
-        "image": quizLogo,
+        "image": sajnaLogo,
         "livingLink": "https://programming-quiz-five.vercel.app",
         "technologies": [<FaReact />]
     },
     {
         "id": 2,
         "name": "Nepo Ai",
-        "image": NepoaiLogo,
+        "image": sajnaLogo,
         "livingLink": "https://nepoai.vercel.app ",
         "technologies": [<FaReact />, < FaNodeJs />, <SiExpress />]
 
@@ -45,7 +41,7 @@ const Projectsdata = [
     {
         "id": 3,
         "name": "Contact Application",
-        "image": ContactLogo,
+        "image": sajnaLogo,
         "livingLink": "github.com/saajnaa/gpcl",
         "technologies": [<FaReact />, < FaNodeJs />, <SiExpress />, <SiMongodb />]
     },
@@ -53,7 +49,7 @@ const Projectsdata = [
 
         "id": 4,
         "name": "Golden Park College",
-        "image": gpcLogo,
+        "image": sajnaLogo,
         "livingLink": "https://golden-park-college.vercel.app",
         "technologies": [<FaReact />, <FaNodeJs />, <SiExpress />, <SiMongodb />]
 
@@ -61,14 +57,14 @@ const Projectsdata = [
     {
         "id": 5,
         "name": "Barju Yuwa club",
-        "image": bycLogo,
+        "image":sajnaLogo,
         "livingLink": "https://barju-yuwa-club.vercel.app",
         "technologies": [<FaReact />, < FaNodeJs />, <SiExpress />, <SiMongodb />]
     },
     {
         "id": 6,
         "name": "Edenburg college",
-        "image": EdenburghLogo,
+        "image": sajnaLogo,
         "livingLink": "https://edenburgh-college.vercel.app",
         "technologies": [<AiFillHtml5 />, <DiCss3 />, <DiJsBadge />]
     },
@@ -88,7 +84,7 @@ function Projects() {
             <div className="project-section">
 
 
-                <h2>Projects</h2>
+                <h2> My Projects</h2>
                 <div className="project-container">
 
                     {
