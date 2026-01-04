@@ -1,6 +1,6 @@
 import React from 'react'
 
-import serviceImg from '../assets/Service.jpg'
+import serviceImg from '../assets/Service.gif'
 import '../styles/services.css'
 
 function Services() {

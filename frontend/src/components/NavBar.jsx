@@ -1,3 +1,4 @@
+import { AiOutlineHome } from "react-icons/ai"; 
 import React from 'react'
 
 import { useState } from 'react'
@@ -23,7 +24,7 @@ function Navbar() {
 
         Setshowlink(!showlink);
 
- 
+
 
     }
 
@@ -44,7 +45,7 @@ function Navbar() {
 
                 <div className='nav-container  '>
 
-                     <button onClick={()=> navigate("/home")} className='navbutton'>
+                    <button onClick={() => navigate("/")} className='navbutton'>
                         <div className="nav-logo">
 
                             <img src={logo} alt="sajan logo" />
@@ -56,10 +57,11 @@ function Navbar() {
 
 
                     <ul className={showlink ? "mobile-menu" : "web-menu"}>
-                         <NavLink  onClick={()=>Setshowlink(false)}  className={({ isActive }) => isActive ? " Activelink " : " link "} to="/projects"> Projects </NavLink>
-                        <NavLink  onClick={()=>Setshowlink(false)}  className={({ isActive }) => isActive ? " Activelink " : " link "} to="/resume"> Resume </NavLink>
-                        <NavLink  onClick={()=>Setshowlink(false)}  className={({ isActive }) => isActive ? " Activelink " : " link "} to="/blog"> Blog </NavLink>
-                        <NavLink  onClick={()=>Setshowlink(false)}  className={({ isActive }) => isActive ? " Activelink " : " link "} to="/contact"> Contact </NavLink>
+                        <NavLink onClick={() => Setshowlink(false)} className={({ isActive }) => isActive ? " Activelink " : " link "} to="/"> <AiOutlineHome /> </NavLink>
+                        <NavLink onClick={() => Setshowlink(false)} className={({ isActive }) => isActive ? " Activelink " : " link "} to="/projects"> Projects </NavLink>
+                        <NavLink onClick={() => Setshowlink(false)} className={({ isActive }) => isActive ? " Activelink " : " link "} to="/resume"> Resume </NavLink>
+                        <NavLink onClick={() => Setshowlink(false)} className={({ isActive }) => isActive ? " Activelink " : " link "} to="/blog"> Blog </NavLink>
+                        <NavLink onClick={() => Setshowlink(false)} className={({ isActive }) => isActive ? " Activelink " : " link "} to="/contact"> Contact </NavLink>
 
                     </ul>
 

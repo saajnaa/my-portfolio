@@ -1,0 +1,19 @@
+.whatsapp{
+
+position: absolute;
+bottom: 20px;
+right: 20px;
+
+
+}
+
+.whatsapp img{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.whatsapp img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
