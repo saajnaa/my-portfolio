@@ -12,9 +12,10 @@
 .technology-section h1 {
 
     text-align: center;
-    font-size: 30px;
+    font-size: 28px;
+    font-family: sans-serif;
     font-weight: 700;
-    color: rgb(2, 3, 12);
+    color: rgb(6, 11, 53);
     border-bottom: .5px solid rgb(32, 11, 66);
 
 
@@ -27,17 +28,17 @@
     width: 100%;
     display: grid;
     grid-template-columns: 200px 200px 200px;
-    gap: 9px;
+    gap: 11px;
     justify-content: center;
     align-items: center;
-    padding: 8px 0;
-
+    padding: 25px 0;
+    margin-top: 5px;
 
 }
 
 .technology {
 
-    border-radius: 10px;
+    border-radius: 8px;
     background: #cac8c883;
     list-style-type: none;
     display: flex;
@@ -45,7 +46,7 @@
     justify-content: center;
     align-items: center;
     gap: 4px;
-    padding: 10px;
+    padding: 6px;
     cursor: pointer;
 
 }

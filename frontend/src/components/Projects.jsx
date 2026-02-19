@@ -17,7 +17,10 @@ import '../styles/projects.css'
 
 
 //==================== photo============================
-import sajnaLogo from '../assets/project-img/sajan-portfolio.png'
+import codingTest from '../assets/project-img/codingTest.png'
+import byc from '../assets/project-img/byc.png'
+import gpc from '../assets/project-img/gpc.png'
+
 
 
 const Projectsdata = [
@@ -25,49 +28,40 @@ const Projectsdata = [
 
     {
         "id": 1,
-        "name": "Programming Quiz",
-        "image": sajnaLogo,
-        "livingLink": "https://programming-quiz-five.vercel.app",
-        "technologies": [<FaReact />]
+        "name": "Coding Test App",
+        "image": codingTest,
+        "demo": "https://programming-quiz-five.vercel.app",
+        "paragraph": "Programming quiz is a programming related web based quiz app",
+        "sourceCode": "123"
     },
     {
-        "id": 2,
-        "name": "Nepo Ai",
-        "image": sajnaLogo,
-        "livingLink": "https://nepoai.vercel.app ",
-        "technologies": [<FaReact />, < FaNodeJs />, <SiExpress />]
 
+        "id": 2,
+        "name": "Golden Park College",
+        "image": gpc,
+        "demo": "https://golden-park-college.vercel.app",
+        "paragraph": "Programming quiz is a programming related web based quiz app",
+        "sourceCode": "123"
     },
-    {
+        {
         "id": 3,
         "name": "Contact Application",
-        "image": sajnaLogo,
-        "livingLink": "github.com/saajnaa/gpcl",
-        "technologies": [<FaReact />, < FaNodeJs />, <SiExpress />, <SiMongodb />]
+        "image": byc,
+        "demo": "github.com/saajnaa/gpcl",
+        "paragraph": "Programming quiz is a programming related web based quiz app",
+        "sourceCode": "123"
+
     },
     {
-
         "id": 4,
-        "name": "Golden Park College",
-        "image": sajnaLogo,
-        "livingLink": "https://golden-park-college.vercel.app",
-        "technologies": [<FaReact />, <FaNodeJs />, <SiExpress />, <SiMongodb />]
+        "name": "Barju Yuwa club",
+        "image": byc,
+        "demo": "https://barju-yuwa-club.vercel.app",
+        "paragraph": "Programming quiz is a programming related web based quiz app",
+        "sourceCode": "123"
 
     },
-    {
-        "id": 5,
-        "name": "Barju Yuwa club",
-        "image":sajnaLogo,
-        "livingLink": "https://barju-yuwa-club.vercel.app",
-        "technologies": [<FaReact />, < FaNodeJs />, <SiExpress />, <SiMongodb />]
-    },
-    {
-        "id": 6,
-        "name": "Edenburg college",
-        "image": sajnaLogo,
-        "livingLink": "https://edenburgh-college.vercel.app",
-        "technologies": [<AiFillHtml5 />, <DiCss3 />, <DiJsBadge />]
-    },
+
 
 ]
 
@@ -84,22 +78,28 @@ function Projects() {
             <div className="project-section">
 
 
-                <h2> My Projects</h2>
+                <h2> Take A Closer Look!</h2>
                 <div className="project-container">
 
                     {
 
 
 
-                        Projectsdata.map(({ id, name, image, livingLink, technologies }) => {
+                        Projectsdata.map(({ id, name, image, demo, paragraph, sourceCode }) => {
 
 
                             return (<div className='project' key={id}>
 
-                                <div> <img src={image} alt="logo" /></div>
+                                
+                                    <img src={image} alt="logo" />
+                                
                                 <p> {name}</p>
-                                <p><Link to={livingLink} target='_blank'>preview Link </Link><CgLink /></p>
-                                <p>  {technologies}</p>
+                                <p>{paragraph}</p>
+
+                                <div className='button-project'>
+                                    <p> <Link to={sourceCode} target='_blank'> Source Code</Link></p>
+                                    <p><Link to={demo} target='_blank'>view Demo</Link></p>
+                                </div>
 
                             </div>
 

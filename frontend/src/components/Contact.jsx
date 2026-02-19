@@ -72,15 +72,15 @@ function Contact() {
         <h2> Let's Discuss About Your idea</h2>
         <form onSubmit={handleSubmit(onsubmit)}>
 
-          {isSubmitting && <span>form submitting</span>}
+          {isSubmitting && <span id='sendingSpan'>Sending Message...</span>}
 
           <label htmlFor="text">Name</label>
-          <input type="text" placeholder='your  name' {...register('name', { required: { value: true, message: "field is required" }, minLength: { value: 4, message: 'minimum lenght is 4' } })} />
-          {errors.name && <span className=' text-red-600'>{errors.name.message}</span>}
+          <input type="text" placeholder='Your  Name' {...register('name', { required: { value: true, message: "Name is required!" }, minLength: { value: 4, message: 'minimum lenght is 4' } })} />
+          {errors.name && <span className=' text-red-900'>{errors.name.message}</span>}
 
           <label htmlFor="email"> Your Email</label>
-          <input type="email" placeholder='email'  {...register('email', { required: { value: true, message: "Email is required" } })} />
-          {errors.email && <span>{errors.email.message}</span>}
+          <input type="email" placeholder='Your Email Address!'  {...register('email', { required: { value: true, message: "Email is required!" } })} />
+          {errors.email && <span className='text-red-900'>{errors.email.message}</span>}
 
 
           <label htmlFor="message">Message</label>

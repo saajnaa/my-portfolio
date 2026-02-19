@@ -19,6 +19,17 @@ font-weight: 500;
 }
 
 
+
+#sendingSpan{
+
+position: absolute;
+background: rgb(3, 54, 3);
+color: whitesmoke;
+
+}
+
+
+
 form{
 
 
@@ -35,14 +46,7 @@ border-radius: 8px;
 
 }
 
-form span{
-
-
-display: absolute;
-background: green;
-
-}
-
+ 
 form label{
 
 

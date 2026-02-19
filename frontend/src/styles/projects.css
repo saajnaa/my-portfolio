@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
-    margin-top: 70px;
+    margin-top: 20px;
 
 
 }
@@ -17,7 +17,7 @@
 .project-section h2 {
 
 
-    font-size: 35px;
+    font-size: 28px;
     font-weight: 700;
     text-align: center;
     margin-top: 20px;
@@ -34,104 +34,89 @@
 
 .project-container {
 
-
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
+     display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
     justify-content: center;
-    padding: 40px;
+    padding: 25px 20px;
     width: 90%;
     gap: 8px;
-    column-gap: 7px;
+    column-gap: 20px;
 
 
 }
 
 
 .project {
-    background: rgb(6, 41, 54);
-    box-shadow: 0 0 4px gray;
     display: flex;
-    gap: 4px;
-    padding: 25px 0;
+    gap: 8px;
+    padding: 35px 0;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border-radius: 8px;
     cursor: pointer;
     transition: 0.1s;
+    color: navy;
+    border: 1px solid rgba(22, 22, 21, 0.363);
 
 
 }
-
-.project div>img {
-    width: 70px;
-    height: 70px;
-    box-shadow: 0 0 10px rgb(248, 248, 250);
-    border-radius: 50%;
-    margin-bottom: 4px;
-}
-
-
-
-
-
-.project:hover {
-
-
-
-    background: rgb(4, 29, 39);
-
-
-
-}
-
-
 
 .project img {
 
-
-    height: 15vh;
-    width: 15vh;
-
+    width: 95%;
+    border-radius: 10px;
+    margin-bottom: 4px;
 
 
 }
 
+
+
 .project p {
 
-    color: rgb(229, 247, 231);
     text-align: center;
 
 
 }
 
 .project p:nth-child(3) {
+
+    color: rgba(12, 12, 12, 0.788);
     margin-top: -5px;
-    color: rgb(235, 49, 2);
-    width: 100%;
+    width: 88%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4px;
 }
 
-.project p:nth-child(3):hover {
-
-    color: green;
-
-
-}
-
-.project p:nth-child(4) {
+.button-project {
 
     display: flex;
     flex-direction: row;
-    font-size: 20px;
-    gap: 6px;
-    color: blue;
+    gap: 8px;
+    margin-top: 8px;
 
 }
 
+.button-project p:nth-child(1) {
+
+
+    color: whitesmoke;
+    background: #12058d;
+    padding: 4px 8px;
+
+
+}
+
+.button-project p:nth-child(2) {
+
+    color: whitesmoke;
+    background: #c0053d;
+    padding: 4px 8px;
+
+}
 
 
 
@@ -139,40 +124,46 @@
 
 
 
-@media only screen and (max-width:998px) {
+@media only screen and (max-width:1070px) {
 
     .project-container {
 
 
-        grid-template-columns: 350px 350px;
+        grid-template-columns: 250px 250px 250px;
 
 
 
     }
 
 
-}
 
-@media only screen and (max-width:740px){
+    .project-section h2 {
+
+        font-size: 24px;
 
 
-.project-container{
+    }
 
-grid-template-columns: 240px 240px;
-margin-top: -30px;
-}
 
-.project-section h2{
-
-font-size: 6vw;
 
 }
 
-.project-section{
+@media only screen and (max-width:800px) {
 
-margin-bottom: 90px;
 
-}
+    .project-container {
+
+        grid-template-columns: 240px 240px;
+        margin-top: -30px;
+    }
+
+
+
+    .project-section {
+
+        margin-bottom: 90px;
+
+    }
 
 
 }
@@ -181,25 +172,20 @@ margin-bottom: 90px;
 @media screen and (max-width:500px) {
 
 
-.project-container{
-
-grid-template-columns: 180px 180px;
-
-}
-
-
-
-    .project-section h2 {
-
-        font-size: 8.5vw;
-        text-align: center;
-        margin-top: 8px;
+    .project-container {
         width: 100%;
-        margin-bottom: 8px;
-
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
     }
- 
- 
+
+
+    .project {
+        width: 240px;
+    }
+
 
 
 }

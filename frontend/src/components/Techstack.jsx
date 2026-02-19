@@ -144,7 +144,7 @@ const Techstack = () => {
 
             <div className="technology-section">
 
-                <h1>Technical Skill's</h1>
+                <h1>Technical skill's</h1>
                 <div className='technology-container'>
 
 
