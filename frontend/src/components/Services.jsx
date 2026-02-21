@@ -7,7 +7,7 @@ function Services() {
     return (
         <>
             <div className="services">
-                <h2>Here's what i can Do?</h2>
+                <h2>what i love to create ! </h2>
                 <div className="horizontal-align">
                     <ul className='ul-service'>
                         <li>Frontend development</li>

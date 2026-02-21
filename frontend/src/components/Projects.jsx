@@ -43,7 +43,7 @@ const Projectsdata = [
         "paragraph": "Programming quiz is a programming related web based quiz app",
         "sourceCode": "123"
     },
-        {
+    {
         "id": 3,
         "name": "Contact Application",
         "image": byc,
@@ -68,6 +68,7 @@ const Projectsdata = [
 
 function Projects() {
 
+    console.log(Projectsdata[0])
 
     return (
 
@@ -81,18 +82,16 @@ function Projects() {
                 <h2> Take A Closer Look!</h2>
                 <div className="project-container">
 
-                    {
-
-
+                    {  
 
                         Projectsdata.map(({ id, name, image, demo, paragraph, sourceCode }) => {
 
 
                             return (<div className='project' key={id}>
 
-                                
-                                    <img src={image} alt="logo" />
-                                
+
+                                <img src={image} alt="logo" />
+
                                 <p> {name}</p>
                                 <p>{paragraph}</p>
 
@@ -106,13 +105,8 @@ function Projects() {
                             )
 
                         })
-
-
-
-
-
-
                     }
+
 
                 </div>
 
